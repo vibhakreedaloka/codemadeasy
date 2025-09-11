@@ -6,8 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SkillShot Masterclass | CodeMadEasy</title>
 <link href="favicon.png" rel="icon">
-<title>SkillShot Masterclass | CodeMadEasy</title>
-<meta property="og:title" content="Skillshot Masterclass - CodeMadEasy">
+<meta property="og:title" content="CodeMadEasy">
 <meta property="og:description" content="Learn powerful coding strategies from Santhosh L. Stop being “just another fresher.” Start being the one recruiters shortlist.">
 <meta property="og:image" content="https://codemadeasy.com/preview.png">
 <meta property="og:url" content="https://codemadeasy.com">
@@ -104,13 +103,13 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
 }
 
 /* Smaller blue subline in hero */
-.hero-subline{display:block;color:var(--cta);font-size:clamp(21px, 3.43vw, 32px);font-weight:700}
+.hero-subline{display:block;color:var(--cta);font-size:clamp(25.2px, 4.116vw, 38.4px);font-weight:700}
 
 
 /* Centered hero intro block */
 .hero-intro{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:10px}
 .hero-details{margin-top:10px}
-.hero-guarantee{font-weight:800;font-size:clamp(21px, 3.43vw, 32px);text-align:center;color:var(--cta);margin-bottom:8px}}
+.hero-guarantee{font-weight:800;font-size:clamp(25.2px, 4.116vw, 38.4px);text-align:center;color:var(--cta);margin-bottom:8px}}
 
 
 /* New hero layout */
@@ -156,6 +155,31 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
   .founder-overlay{left:50%; transform:translate(-50%,0); top:70%; width:92%;}
 }
 
+
+/* Center align hero top content */
+.hero-top{ display:flex; flex-direction:column; align-items:center; text-align:center; }
+.hero-top .hero-title{ text-align:center; }
+.hero-top .hero-subline{ text-align:center; }
+.hero-top .hero-guarantee{ text-align:center !important; align-self:center; width:100%; }
+
+
+/* Mobile wrap for the header CTA */
+@media (max-width: 640px){
+  .site-header .nav-cta a{
+    white-space: normal;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.15;
+    padding: 8px 10px;
+    max-width: 140px;
+  }
+  .sm-only{ display: inline; }
+}
+.sm-only{ display: none; }
+
+@media(max-width:960px){ .hero-subline{ text-align:center !important; } }
 </style>
 
 <link rel="icon" type="image/png" sizes="16x16" href="assets/16x16.png">
@@ -170,7 +194,7 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
 <header class="site-header">
   <div class="container row">
     <div class="brand-left"><img src="assets/logo.png" alt="CodeMadEasy Logo" /></div>
-    <div class="nav-cta"><a class="wiggle" href="https://tagmango.app/c828d3f6a0">Register Free</a></div>
+    <div class="nav-cta"><a class="wiggle" href="https://tagmango.app/c828d3f6a0">Register<span class="sm-only"><br></span> Free</a></div>
   </div>
 </header>
 
@@ -330,7 +354,7 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
 
 <div class="sticky-cta">
   <div class="container row">
-    <span class="badge-live"><span class="dot" style="height:8px;width:8px;"></span> Live seats are almost gone—lock yours for FREE</span>
+    <span class="badge-live"><span class="dot" style="height:8px;width:8px;"></span> Live seats are almost gone—lock yours for NOW</span>
     <a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Register Free</a>
   </div>
 </div>
