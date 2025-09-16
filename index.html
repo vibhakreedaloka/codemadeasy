@@ -1,18 +1,20 @@
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>SkillShot Masterclass | CodeMadEasy</title>
 <link href="favicon.png" rel="icon">
-<meta property="og:title" content="CodeMadEasy">
+<title>SkillShot Masterclass | CodeMadEasy</title>
+<meta property="og:title" content="Skillshot Masterclass - CodeMadEasy">
 <meta property="og:description" content="Learn powerful coding strategies from Santhosh L. Stop being “just another fresher.” Start being the one recruiters shortlist.">
 <meta property="og:image" content="https://codemadeasy.com/preview.png">
 <meta property="og:url" content="https://codemadeasy.com">
 <meta property="og:type" content="website">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<style style="font-size:120%;">
 :root{--brand:#0b2a45;--ink:#0f172a;--muted:#475569;--card:#f8fafc;--cta:#0073ff;--ctaText:#fff}
 *{box-sizing:border-box}
 html,body{margin:0;padding:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff;background-image:url('assets/theme-bg.png');background-size:cover;background-position:center top;background-attachment:fixed;background-repeat:no-repeat}
@@ -103,13 +105,13 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
 }
 
 /* Smaller blue subline in hero */
-.hero-subline{display:block;color:var(--cta);font-size:clamp(25.2px, 4.116vw, 38.4px);font-weight:700}
+.hero-subline{display:block;color:var(--cta);font-size:clamp(21px, 3.43vw, 32px);font-weight:700}
 
 
 /* Centered hero intro block */
 .hero-intro{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;margin-bottom:10px}
 .hero-details{margin-top:10px}
-.hero-guarantee{font-weight:800;font-size:clamp(25.2px, 4.116vw, 38.4px);text-align:center;color:var(--cta);margin-bottom:8px}}
+.hero-guarantee{font-weight:800;font-size:clamp(21px, 3.43vw, 32px);text-align:center;color:var(--cta);margin-bottom:8px}}
 
 
 /* New hero layout */
@@ -156,209 +158,245 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
 }
 
 
-/* Center align hero top content */
-.hero-top{ display:flex; flex-direction:column; align-items:center; text-align:center; }
-.hero-top .hero-title{ text-align:center; }
-.hero-top .hero-subline{ text-align:center; }
-.hero-top .hero-guarantee{ text-align:center !important; align-self:center; width:100%; }
-
-
-/* Mobile wrap for the header CTA */
-@media (max-width: 640px){
-  .site-header .nav-cta a{
-    white-space: normal;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 1.15;
-    padding: 8px 10px;
-    max-width: 140px;
-  }
-  .sm-only{ display: inline; }
+/* v62 alignment + font tweaks */
+.title { text-align:center; }
+.title.blueprint { font-size: clamp(31px, 5.5vw, 48px); }
+.guaranteed { text-align:center; font-size: clamp(24px, 4.3vw, 34px); }
+@media (max-width: 640px) {
+  .title, .guaranteed { text-align: center; }
 }
-.sm-only{ display: none; }
 
-@media(max-width:960px){ .hero-subline{ text-align:center !important; } }
+
+/* v62 bottom bar */
+.bar { background:#0b1220; color:#fff; }
+.bottom-grid { display:grid; grid-template-columns:1fr auto; align-items:center; gap:16px; padding:12px 16px; }
+.bottom-center { text-align:center; justify-self:center; }
+.bottom-links { display:flex; flex-direction:column; gap:6px; justify-self:end; text-align:right; }
+.bottom-links a { color:#93c5fd; text-decoration:none; }
+@media (max-width: 700px) {
+  .bottom-grid { grid-template-columns:1fr; }
+  .bottom-center { order:1; }
+  .bottom-links { order:2; justify-self:center; text-align:center; }
+}
+
 </style>
+<link href="assets/16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="assets/32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="assets/32x32.png" rel="shortcut icon" type="image/png"/>
+<link href="assets/180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+<meta content="#0b2a45" name="theme-color"/>
+<style id="ai-patch-0916">/* AI Patch 2025-09-16 */
+@media (max-width: 640px){
+  header.site-header .nav-cta a .mobile-break { display:block; }
+  header.site-header .nav-cta a { white-space: normal; display:inline-block; line-height:1.1; text-align:center; padding-left:0.75rem; padding-right:0.75rem; }
+  .hero .headline { text-align:center; }
+  .hero .hero-top { text-align:center; }
+  .hero .hero-subline { text-align:center; }
+}
+.hero .headline { text-align:center; } /* ensure desktop too */
+.hero .hero-top { text-align:center; }
+.hero .hero-guarantee { text-align:center; font-size:calc(150% + 10pt); }
+.hero .hero-subline { font-size:calc(150% + 10pt); }
 
-<link rel="icon" type="image/png" sizes="16x16" href="assets/16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/32x32.png">
-<link rel="shortcut icon" type="image/png" href="assets/32x32.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/180x180.png">
-<meta name="theme-color" content="#0b2a45">
-</head>
 
+
+
+@media (max-width: 640px){
+  
+}
+/* End AI Patch */
+/* Footer bar tweaks */
+.footer-bar {
+  background:#0f172a;
+  color:#ffffff;
+  padding:24px 32px;
+  display:grid;
+  grid-template-columns: 1fr auto;
+  align-items:center;
+  gap:12px;
+  min-height:92px;
+}
+.footer-bar .center-text { text-align:center; }
+.footer-bar .right-links { display:flex; flex-direction:column; gap:4px; align-items:flex-end;  margin-right: 16px;}
+.footer-bar .right-links a { color:#ffffff; text-decoration:none; }
+@media (max-width: 640px){
+  .footer-bar { grid-template-columns: 1fr; }
+  .footer-bar .right-links { align-items:center;  margin-right: 16px;}
+}
+/* End AI Patch */
+/* Force consistent hero sizes across devices */
+@media (max-width: 640px){
+  .hero .headline { font-size: 47px !important; }
+  .hero .hero-subline { font-size: calc(150% + 10pt) !important; }
+  .hero .hero-guarantee { font-size: calc(150% + 10pt) !important; }
+}</style><!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '800875292318852');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=800875292318852&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<!-- End Meta Pixel Code --></head>
 <body>
-
 <header class="site-header">
-  <div class="container row">
-    <div class="brand-left"><img src="assets/logo.png" alt="CodeMadEasy Logo" /></div>
-    <div class="nav-cta"><a class="wiggle" href="https://tagmango.app/c828d3f6a0">Register<span class="sm-only"><br></span> Free</a></div>
-  </div>
+<div class="container row">
+<div class="brand-left"><img alt="CodeMadEasy Logo" src="assets/logo.png"/></div>
+<div class="nav-cta"><a class="wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Register <span class="mobile-break">Free</span></a></div>
+</div>
 </header>
-
-
 <section class="hero">
-  <div class="container">
-    <div class="hero-top">
-      <a class="btn light wiggle" href="https://tagmango.app/c828d3f6a0" style="padding:8px 14px;border-radius:999px;font-size:14px;font-weight:800;">No Nonsense Live Seminar</a>
-      <h1 class="headline">SkillShot Masterclass</h1>
-      <span class="hero-subline">Learn the step-by-step blueprint to build a Software project from scratch that makes you industry-ready and impresses recruiters.</span>
-      <div class="hero-guarantee">Guaranteed.</div>
-    </div>
-    <div class="hero-bottom">
-      <div class="hero-left">
-        <p class="sub">120 minutes. One playbook. Pick the right project, plan it, build it, present it. <strong>Live seats are limited</strong> — miss this and you’ll be watching your batchmates zoom past.</p>
-        <div class="announce"><span class="dot"></span> Filling fast</div>
-        
+<div class="container">
+<div class="hero-top">
+<a class="btn light wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320" style="padding:8px 14px;border-radius:999px;font-size:14px;font-weight:800;; text-align:center;">No Nonsense Live Seminar</a>
+<h1 class="headline" style="text-align:center; font-size: 47px !important;">SkillShot Masterclass</h1>
+<span class="hero-subline" style="font-size: calc(150% + 10pt) !important;">Learn the step-by-step blueprint to build a Software project from scratch that makes you industry-ready and impresses recruiters.</span>
+<div class="hero-guarantee" style="text-align:center;    font-size: calc(150% + 10pt) !important;">Guaranteed.</div>
+</div>
+<div class="hero-bottom">
+<div class="hero-left">
+<p class="sub">120 minutes. One playbook. Pick the right project, plan it, build it, present it. <strong>Live seats are limited</strong> — miss this and you’ll be watching your batchmates zoom past.</p>
+<div class="announce"><span class="dot"></span> Filling fast</div>
 <div class="meta">
-  <div class="card">📅 <strong>Date:</strong> Sunday, 21 Sep 2025</div>
-  <div class="card">⏰ <strong>Time:</strong> 10:30 AM – 12:30 PM IST (2 hours)</div>
-  <div class="card">🖥️ <strong>Where:</strong> Live on Zoom (link after registration)</div>
-  <div class="card">🗣️ <strong>Language:</strong> English</div>
+<div class="card">📅 <strong>Date:</strong> Sunday, 21 Sep 2025</div>
+<div class="card">⏰ <strong>Time:</strong> 11:00 AM – 01:00 PM IST (2 hours)</div>
+<div class="card">🖥️ <strong>Where:</strong> Live on Zoom (link after registration)</div>
+<div class="card">🗣️ <strong>Language:</strong> English</div>
 </div>
-
-        <div><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">👉 Grab Your Free Seat Now</a></div>
-      </div>
-      <div class="hero-right">
-        <div class="photo-wrap">
-  <img class="hero-photo" src="assets/mentor.png" alt="Santhosh L — CodeMadEasy" />
-  <div class="founder-box founder-overlay"><div class="founder-box-title"><strong>Founder of CodeMadEasy.com</strong></div><div class="founder-box-text">15 years of experience in the Software Industry, written more than 10 Lakh lines of code and built plenty of Apps and Games from Scratch to Launch.</div></div>
+<div><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">👉 Grab Your Free Seat Now</a></div>
 </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="hero-right">
+<div class="photo-wrap">
+<img alt="Santhosh L — CodeMadEasy" class="hero-photo" src="assets/mentor.png"/>
+<div class="founder-box founder-overlay"><div class="founder-box-title"><strong>Founder of CodeMadEasy.com</strong></div><div class="founder-box-text">15 years of experience in the Software Industry, written more than 10 Lakh lines of code and built plenty of Apps and Games from Scratch to Launch.</div></div>
+</div>
+</div>
+</div>
+</div>
 </section>
-
-
 <!-- 3: Learn (white) -->
 <section class="section" id="learn" style="background:#ffffff;">
-  <div class="container stack-24">
-    <h2>What you will learn</h2>
-    <div class="grid-3">
-      <div class="card"><h3>Skills vs Knowledge (the truth)</h3><p>What actually gets you hired — and why theory without output = 👎.</p></div>
-      <div class="card"><h3>Choosing your project</h3><p>Map it to your dream role (AI, Unity, Web, Data) so your portfolio screams “hire me.”</p></div>
-      <div class="card"><h3>Project planning, simplified</h3><p>Scope → milestones → demo checklist you can follow daily.</p></div>
-      <div class="card"><h3>Execution engine</h3><p>Lightweight workflows, Git basics, and a 30-minute/day routine that compounds.</p></div>
-      <div class="card"><h3>Why companies prefer “experienced”</h3><p>Decode industry standards and fake experience the right way (via process).</p></div>
-      <div class="card"><h3>Presentation playbook</h3><p>How to narrate your project like a pro — viva, jury, interviews, the whole stage.</p></div>
-    </div>
-    <div><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Yes, I want to be future‑ready — Sign me up now!</a></div>
-  </div>
+<div class="container stack-24">
+<h2>What you will learn</h2>
+<div class="grid-3">
+<div class="card"><h3>Skills vs Knowledge (the truth)</h3><p>What actually gets you hired — and why theory without output = 👎.</p></div>
+<div class="card"><h3>Choosing your project</h3><p>Map it to your dream role (AI, Unity, Web, Data) so your portfolio screams “hire me.”</p></div>
+<div class="card"><h3>Project planning, simplified</h3><p>Scope → milestones → demo checklist you can follow daily.</p></div>
+<div class="card"><h3>Execution engine</h3><p>Lightweight workflows, Git basics, and a 30-minute/day routine that compounds.</p></div>
+<div class="card"><h3>Why companies prefer “experienced”</h3><p>Decode industry standards and fake experience the right way (via process).</p></div>
+<div class="card"><h3>Presentation playbook</h3><p>How to narrate your project like a pro — viva, jury, interviews, the whole stage.</p></div>
+</div>
+<div><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Yes, I want to be future‑ready — Sign me up now!</a></div>
+</div>
 </section>
-
 <!-- 4: Benefits (theme) -->
 <section class="section" id="benefits" style="background:transparent;">
-  <div class="container stack-24">
-    <h2>Top 3 Benefits</h2>
-    <div class="grid-3">
-      <div class="card"><h3>Build 1 Software Project in 30 Days</h3><p>A clear roadmap to work for not more than 60 minutes a day to complete the project in 30 days.</p></div>
-      <div class="card"><h3>Look like a 1–2 years of Experienced</h3><p>Planning, versioning, and review habits recruiters respect.</p></div>
-      <div class="card"><h3>Present your Software like a Pro</h3><p>Speak about your code with clarity (and confidence).</p></div>
-    </div>
-    <div><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Let’s Build — Reserve My Seat (Free)</a></div>
-  </div>
+<div class="container stack-24">
+<h2>Top 3 Benefits</h2>
+<div class="grid-3">
+<div class="card"><h3>Build 1 Software Project in 30 Days</h3><p>A clear roadmap to work for not more than 60 minutes a day to complete the project in 30 days.</p></div>
+<div class="card"><h3>Look like a 1–2 years of Experienced</h3><p>Planning, versioning, and review habits recruiters respect.</p></div>
+<div class="card"><h3>Present your Software like a Pro</h3><p>Speak about your code with clarity (and confidence).</p></div>
+</div>
+<div><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Let’s Build — Reserve My Seat (Free)</a></div>
+</div>
 </section>
-
 <!-- 5: NOT for (white) -->
 <section class="section" id="not-for" style="background:#ffffff;">
-  <div class="container stack-24">
-    <h2>Who this webinar is <span style="color:#ef4444">NOT</span> for</h2>
-    <ul class="bullets">
-      <li><span class="cross">❌</span> Looking for shortcuts, not systems.</li>
-      <li><span class="cross">❌</span> If you hate leveling up—skip it.</li>
-      <li><span class="cross">❌</span> If you want magic, not hard work—this isn’t for you.</li>
-      <li><span class="cross">❌</span> If you don’t care about your goals or future, you’ll be bored here.</li>
-      <li><span class="cross">❌</span> If you don’t vibe with growth and don’t want to stand out—this isn’t your tribe.</li>
-    </ul>
-    <a class="btn wiggle" href="https://tagmango.app/c828d3f6a0" style="background:#0f172a">Growth isn’t for everyone—Claim your spot if you’re ready to rise</a>
-  </div>
+<div class="container stack-24">
+<h2>Who this webinar is <span style="color:#ef4444">NOT</span> for</h2>
+<ul class="bullets">
+<li><span class="cross">❌</span> Looking for shortcuts, not systems.</li>
+<li><span class="cross">❌</span> If you hate leveling up—skip it.</li>
+<li><span class="cross">❌</span> If you want magic, not hard work—this isn’t for you.</li>
+<li><span class="cross">❌</span> If you don’t care about your goals or future, you’ll be bored here.</li>
+<li><span class="cross">❌</span> If you don’t vibe with growth and don’t want to stand out—this isn’t your tribe.</li>
+</ul>
+<a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320" style="background:#0f172a">Growth isn’t for everyone—Claim your spot if you’re ready to rise</a>
+</div>
 </section>
-
 <!-- 6: IS for (theme) -->
 <section class="section" id="is-for" style="background:transparent;">
-  <div class="container stack-24">
-    <h2>Who this webinar <span style="color:#10b981">IS</span> for</h2>
-    <ul class="bullets">
-      <li><span class="check">✅</span> Students who want to fast‑forward placements with real work, not reels.</li>
-      <li><span class="check">✅</span> Freshers who want to look industry‑ready and jump queues.</li>
-      <li><span class="check">✅</span> Doers who want to overtake their batch with clean demos + tight portfolio.</li>
-      <li><span class="check">✅</span> Future founders who want to turn ideas into shippable MVPs.</li>
-      <li><span class="check">✅</span> For the bold who want an edge in tech.</li>
-      <li><span class="check">✅</span> For future leaders, coders, founders.</li>
-      <li><span class="check">✅</span> If “average” isn’t your style—you’re made for this.</li>
-      <li><span class="check">✅</span> Ready to build skills that everyone notices? Click below.</li>
-    </ul>
-    <div><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Let’s Build — Reserve My Seat (Free)</a></div>
-  </div>
+<div class="container stack-24">
+<h2>Who this webinar <span style="color:#10b981">IS</span> for</h2>
+<ul class="bullets">
+<li><span class="check">✅</span> Students who want to fast‑forward placements with real work, not reels.</li>
+<li><span class="check">✅</span> Freshers who want to look industry‑ready and jump queues.</li>
+<li><span class="check">✅</span> Doers who want to overtake their batch with clean demos + tight portfolio.</li>
+<li><span class="check">✅</span> Future founders who want to turn ideas into shippable MVPs.</li>
+<li><span class="check">✅</span> For the bold who want an edge in tech.</li>
+<li><span class="check">✅</span> For future leaders, coders, founders.</li>
+<li><span class="check">✅</span> If “average” isn’t your style—you’re made for this.</li>
+<li><span class="check">✅</span> Ready to build skills that everyone notices? Click below.</li>
+</ul>
+<div><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Let’s Build — Reserve My Seat (Free)</a></div>
+</div>
 </section>
-
 <!-- 7: Testimonials (white) -->
 <section class="section" id="testimonials" style="background:#ffffff;">
-  <div class="container stack-24">
-    <h2>Testimonials & Social Proof</h2>
-    <div class="grid-3">
-      <div class="card"><h3>“I got clarity on my Goals”</h3><p>Before getting trained under Santhosh Sir, I had very little idea about Industry Standards. I got wonderful knowledge about what to do and how to do it. Also, it gave me more clarity on my future goals.</p><p style="color:var(--muted)">— Mayur Gowda, Bengaluru</p></div>
-      <div class="card"><h3>“Now, I am an Industry Ready Candidate”</h3><p>Until I met Santhosh, my exposure was limited to basics such as solving problems in HackerRank and learning concepts in class and I had no idea what the actual industry looked like. Santhosh played a pivotal role in helping me bridge that gap. He was incredibly patient and explained to me how the things work and why they work that way in industry. Now, I am an industry ready candidate.</p><p style="color:var(--muted)">— Sanket, Bengaluru</p></div>
-      <div class="card"><h3>“Online Tutorials & Coding Courses never helped me”</h3><p>I had completed several projects in my college, but I had lacked real world knowledge. Before I met Santhosh, I was struggling to write efficient and scalable code. I was following online tutorials and coding courses, but I never got the clarity or depth that was needed to build production level applications. Santhosh filled that gap. His mentorship was unlike anything that I had experienced.</p><p style="color:var(--muted)">— Neeraj, Bengaluru</p></div>
-      <div class="card"><h3>“Now, I can deal with complexities of real world projects”</h3><p>Before meeting Santhosh, I found it very difficult to adapt to industry level development. Tutorial and college projects never helped me deal with the complexity of real world projects. Santhosh bridged this gap. Santhosh has a strong logical reasoning as well as a practical approach to solving problems.</p><p style="color:var(--muted)">— Tryambak, Bengaluru</p></div>
-    </div>
-    <a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">I Want Results Like These</a>
-  </div>
+<div class="container stack-24">
+<h2>Testimonials &amp; Social Proof</h2>
+<div class="grid-3">
+<div class="card"><h3>“I got clarity on my Goals”</h3><p>Before getting trained under Santhosh Sir, I had very little idea about Industry Standards. I got wonderful knowledge about what to do and how to do it. Also, it gave me more clarity on my future goals.</p><p style="color:var(--muted)">— Mayur Gowda, Bengaluru</p></div>
+<div class="card"><h3>“Now, I am an Industry Ready Candidate”</h3><p>Until I met Santhosh, my exposure was limited to basics such as solving problems in HackerRank and learning concepts in class and I had no idea what the actual industry looked like. Santhosh played a pivotal role in helping me bridge that gap. He was incredibly patient and explained to me how the things work and why they work that way in industry. Now, I am an industry ready candidate.</p><p style="color:var(--muted)">— Sanket, Bengaluru</p></div>
+<div class="card"><h3>“Online Tutorials &amp; Coding Courses never helped me”</h3><p>I had completed several projects in my college, but I had lacked real world knowledge. Before I met Santhosh, I was struggling to write efficient and scalable code. I was following online tutorials and coding courses, but I never got the clarity or depth that was needed to build production level applications. Santhosh filled that gap. His mentorship was unlike anything that I had experienced.</p><p style="color:var(--muted)">— Neeraj, Bengaluru</p></div>
+<div class="card"><h3>“Now, I can deal with complexities of real world projects”</h3><p>Before meeting Santhosh, I found it very difficult to adapt to industry level development. Tutorial and college projects never helped me deal with the complexity of real world projects. Santhosh bridged this gap. Santhosh has a strong logical reasoning as well as a practical approach to solving problems.</p><p style="color:var(--muted)">— Tryambak, Bengaluru</p></div>
+</div>
+<a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">I Want Results Like These</a>
+</div>
 </section>
-
 <!-- 8: Trainer (theme) -->
 <section class="section" id="trainer" style="background:transparent;">
-  <div class="container stack-24">
-    <h2>Meet your trainer</h2>
-    <div class="trainer">
-      <div class="avatar"><img src="assets/mentor.png" alt="Santhosh L — CodeMadEasy"/></div>
-      <div class="about">
-        <h3>Santhosh L - Founder of CodeMadEasy - I build doers</h3>
-        <p>Across 15 years, I’ve done the whole thing — coding (written <strong>10 lakh+ lines of code</strong>), building apps & games from scratch to launch, running my own company, conducting large online events, and taking a product from zero to market solo. I’m an <strong>Ex-Lead Developer</strong> and the only person at my company to win <strong>Best Employee twice</strong>. I solo-built ChessEra and ran <strong>200+ online tournaments for 40,000+ players</strong>, so I understand product, ops, scale, and what “done-done” means.</p>
-        <p>Today, with CodeMadEasy, I help all IT students (BCA, MCA, B.Tech CS/IS and other IT streams) get industry-ready fast: pick a role-aligned project (Unity/Web/Python-AI), plan it smart, execute in 30-minute sprints, keep clean Git habits, and present your work so it gets shortlists. I’ve learned that momentum beats motivation, systems beat talent, and a tight demo beats a thousand buzzwords. If you’re ready to stop waiting and start building, let’s go.</p>
-        <div><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Don’t just dream. Join the SkillShot Masterclass — Free Seat</a></div>
-      </div>
-    </div>
-  </div>
+<div class="container stack-24">
+<h2>Meet your trainer</h2>
+<div class="trainer">
+<div class="avatar"><img alt="Santhosh L — CodeMadEasy" src="assets/mentor.png"/></div>
+<div class="about">
+<h3>Santhosh L - Founder of CodeMadEasy - I build doers</h3>
+<p>Across 15 years, I’ve done the whole thing — coding (written <strong>10 lakh+ lines of code</strong>), building apps &amp; games from scratch to launch, running my own company, conducting large online events, and taking a product from zero to market solo. I’m an <strong>Ex-Lead Developer</strong> and the only person at my company to win <strong>Best Employee twice</strong>. I solo-built ChessEra and ran <strong>200+ online tournaments for 40,000+ players</strong>, so I understand product, ops, scale, and what “done-done” means.</p>
+<p>Today, with CodeMadEasy, I help all IT students (BCA, MCA, B.Tech CS/IS and other IT streams) get industry-ready fast: pick a role-aligned project (Unity/Web/Python-AI), plan it smart, execute in 30-minute sprints, keep clean Git habits, and present your work so it gets shortlists. I’ve learned that momentum beats motivation, systems beat talent, and a tight demo beats a thousand buzzwords. If you’re ready to stop waiting and start building, let’s go.</p>
+<div><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320" style="text-align:center;">Don’t just dream. Join the SkillShot Masterclass — Free Seat</a></div>
+</div>
+</div>
+</div>
 </section>
-
 <!-- 9: FAQs (white) -->
 <section class="section" id="faqs" style="background:#ffffff;">
-  <div class="container stack-24">
-    <h2>FAQs</h2>
-    <details><summary>I’m a beginner. Can I join?</summary><div class="faq-content"><p>Yes — if you can give 1 hour/day, you’re good. We’ll keep the setup light, focus on project-first execution, and show you how to start without fancy gear.</p></div></details>
-    <details><summary>How is this different from college classes or YouTube?</summary><div class="faq-content"><p>This is outcome-first. In 2 hours you’ll learn how to pick a role-aligned project, plan it clean, execute in small sprints, and present it like you belong in the room. No endless theory, no rabbit holes.</p></div></details>
-    <details><summary>Will this actually help with placements/internships?</summary><div class="faq-content"><p>Yep. Recruiters want evidence: a relevant project, tidy GitHub, a short demo they can skim, and clear problem–solution thinking. You’ll learn how to build exactly that.</p></div></details>
-    <details><summary>What will I learn in the 2-hour session?</summary><div class="faq-content"><ul class="bullets"><li><strong>Skills vs Knowledge (the truth):</strong> what gets you shortlisted.</li><li><strong>Project selection:</strong> map ideas to AI/Unity/Web/Data roles.</li><li><strong>Planning basics:</strong> scope → milestones → success criteria.</li><li><strong>Execution habits:</strong> small daily sprints, Git essentials, quick reviews.</li><li><strong>Presentation:</strong> how to talk through your work with clarity and confidence.</li></ul></div></details>
-    <details><summary>Do I need a powerful laptop or premium tools?</summary><div class="faq-content"><p>No. We’ll show lightweight paths: smarter scoping, minimal tooling, and how to use labs/cloud when needed. The goal is shipping, not specs.</p></div></details>
-    <details><summary>Is there a recording if I miss it?</summary><div class="faq-content"><p>Live is best for momentum. If you want a replay, there’s an optional paid recording (₹199 for 3 months) available at checkout. Totally optional.</p></div></details>
-    <details><summary>I’m from BCA/MCA/B.Tech CS/IS (or another IT stream). Will this fit me?</summary><div class="faq-content"><p>100%. The method works across streams. We’ll teach a repeatable system you can reuse for any stack — Unity, Web, Python/AI, you name it.</p></div></details>
-    <details><summary>How do I stand out as a fresher?</summary><div class="faq-content"><p>Ship one strong, relevant project. Keep a clean README, small demo video, and a sensible Git history. That combo beats buzzwords and “course completed” screenshots.</p></div></details>
-    <details><summary>Will you teach execution workflows and presentation skills?</summary><div class="faq-content"><p>Yes — you’ll get execution system (commons-first, modular architecture, incremental builds, smart backups) and a 5-step presentation playbook to explain your project with confidence.</p></div></details>
-    <details><summary>What happens after the masterclass — what skills will I have and how can I execute from now on?</summary><div class="faq-content"><p>You’ll know how to pick a role-aligned project, plan 2–3 milestones, execute in 60-minute daily sprints with simple version control, and present using a clear problem → approach → demo → results → next steps script. Start now: choose your project, ship MVP #1 this week, add one standout feature next week, rehearse, and share a 60–90s screen-recorded demo.</p></div></details>
-  </div>
+<div class="container stack-24">
+<h2>FAQs</h2>
+<details><summary>I’m a beginner. Can I join?</summary><div class="faq-content"><p>Yes — if you can give 1 hour/day, you’re good. We’ll keep the setup light, focus on project-first execution, and show you how to start without fancy gear.</p></div></details>
+<details><summary>How is this different from college classes or YouTube?</summary><div class="faq-content"><p>This is outcome-first. In 2 hours you’ll learn how to pick a role-aligned project, plan it clean, execute in small sprints, and present it like you belong in the room. No endless theory, no rabbit holes.</p></div></details>
+<details><summary>Will this actually help with placements/internships?</summary><div class="faq-content"><p>Yep. Recruiters want evidence: a relevant project, tidy GitHub, a short demo they can skim, and clear problem–solution thinking. You’ll learn how to build exactly that.</p></div></details>
+<details><summary>What will I learn in the 2-hour session?</summary><div class="faq-content"><ul class="bullets"><li><strong>Skills vs Knowledge (the truth):</strong> what gets you shortlisted.</li><li><strong>Project selection:</strong> map ideas to AI/Unity/Web/Data roles.</li><li><strong>Planning basics:</strong> scope → milestones → success criteria.</li><li><strong>Execution habits:</strong> small daily sprints, Git essentials, quick reviews.</li><li><strong>Presentation:</strong> how to talk through your work with clarity and confidence.</li></ul></div></details>
+<details><summary>Do I need a powerful laptop or premium tools?</summary><div class="faq-content"><p>No. We’ll show lightweight paths: smarter scoping, minimal tooling, and how to use labs/cloud when needed. The goal is shipping, not specs.</p></div></details>
+<details><summary>Is there a recording if I miss it?</summary><p>Live is best for momentum. Hence, we are not providing recording for those who have missed the live session. If you miss it, please try to register for the next webinar live.</p></details>
+<details><summary>I’m from BCA/MCA/B.Tech CS/IS (or another IT stream). Will this fit me?</summary><div class="faq-content"><p>100%. The method works across streams. We’ll teach a repeatable system you can reuse for any stack — Unity, Web, Python/AI, you name it.</p></div></details>
+<details><summary>How do I stand out as a fresher?</summary><div class="faq-content"><p>Ship one strong, relevant project. Keep a clean README, small demo video, and a sensible Git history. That combo beats buzzwords and “course completed” screenshots.</p></div></details>
+<details><summary>Will you teach execution workflows and presentation skills?</summary><div class="faq-content"><p>Yes — you’ll get execution system (commons-first, modular architecture, incremental builds, smart backups) and a 5-step presentation playbook to explain your project with confidence.</p></div></details>
+<details><summary>What happens after the masterclass — what skills will I have and how can I execute from now on?</summary><div class="faq-content"><p>You’ll know how to pick a role-aligned project, plan 2–3 milestones, execute in 60-minute daily sprints with simple version control, and present using a clear problem → approach → demo → results → next steps script. Start now: choose your project, ship MVP #1 this week, add one standout feature next week, rehearse, and share a 60–90s screen-recorded demo.</p></div></details>
+</div>
 </section>
-
 <!-- 10: Register (theme) -->
 <section class="section" id="register" style="padding:56px 0 80px;background:transparent;">
-  <div class="container stack-24" style="text-align:center;">
-    <h2>Secure your seat. Level up your skills.</h2>
-    <p class="sub">Register NOW — SkillShot Masterclass</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Register Free</a></div>
-    <img src="assets/logo.png" alt="CodeMadEasy Logo" style="height:96px;width:auto;opacity:.85;margin:14px auto 0" />
-  </div>
-</section>
-
-<div class="sticky-cta">
-  <div class="container row">
-    <span class="badge-live"><span class="dot" style="height:8px;width:8px;"></span> Live seats are almost gone—lock yours for NOW</span>
-    <a class="btn wiggle" href="https://tagmango.app/c828d3f6a0">Register Free</a>
-  </div>
+<div class="container stack-24" style="text-align:center;">
+<h2>Secure your seat. Level up your skills.</h2>
+<p class="sub" style="text-align:center;">Register NOW — SkillShot Masterclass</p>
+<div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;"><a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Register Free</a></div>
+<img alt="CodeMadEasy Logo" src="assets/logo.png" style="height:96px;width:auto;opacity:.85;margin:14px auto 0"/>
 </div>
-
+</section>
+<div class="sticky-cta">
+<div class="container row">
+<span class="badge-live"><span class="dot" style="height:8px;width:8px;"></span> Live seats are almost gone—lock yours NOW</span>
+<a class="btn wiggle" href="https://upskill.codemadeasy.com/l/b966fc9320">Register Free</a>
+</div>
+</div>
 <script>
 // Smooth-scroll for internal hash links only
 (function(){
@@ -417,5 +455,5 @@ details .faq-content p,details .faq-content ul{margin:12px 0 0}
   }
 })();
 </script>
-</body>
+<div class="footer-bar"><div class="center-text">Copyright © 2025 KreedaLoka Private Limited | All Rights Reserved.</div><div class="right-links"><a href="https://codemadeasy.com/privacy-policy" rel="noopener" target="_blank">Privacy Policy</a><a href="https://codemadeasy.com/terms" rel="noopener" target="_blank">Terms &amp; Conditions</a><a href="https://codemadeasy.com/refund-policy" rel="noopener" target="_blank">Refund Policy</a></div></div></body>
 </html>
