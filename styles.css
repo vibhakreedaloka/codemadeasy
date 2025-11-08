@@ -129,23 +129,14 @@ a.cta.whats:hover, a.cta.whats:focus { filter: brightness(1.05); }
 .home .bottom-floating .cta:focus { filter: brightness(1.05); }
 
 
-/* v46: Theming tweaks per request */
-/* What you will learn cards */
+/* v51: Re-apply theme and section fixes */
+/* What you will learn cards background */
 .grid-3 .card { background: #E3EFFC; }
 
-/* FAQs boxes */
+/* FAQ items background box */
 .faq details { background: #E3EFFC; border-radius: 12px; padding: 12px 14px; }
 
-/* Ensure any leftover 'green' utility gets overridden to dark navy in the 'Who is this webinar for' region */
-.section.light .items .item, 
-.section.light .items li { color: #0F172A !important; }
-
-
-/* v47: Force dark text color in 'Who is this webinar for' bullets */
-.who-for-items, .who-for-items * {
-  color: #0F172A !important;
-}
-
-
-/* v48: Force dark bullets in 'Who is this webinar for' section */
-.who-for .good { color: #0F172A !important; }
+/* Ensure 'Who is this webinar for' bullets use dark navy text, not green */
+.who-for .good,
+.who-for .items,
+.who-for .items * { color: #0F172A !important; }
